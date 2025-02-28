@@ -1,79 +1,124 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" />
+    <title>Golden Services</title>
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Droid+Serif"
+    />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
-      <h1 class="header-title"><span class="title-logo-text" style="color: #2196F3;">Web</span>Studio</h1>
-      <p class="header-email">Email: info@devstudio.com</p>
-      <p class="header-tel">Tel: +38 096 111 11 11</p>
+      <div class="container">
+        <a href="" class="logo-link">Golden</a>
+        <nav class="header-navigation">
+          <ul class="header-list">
+            <li class="header-item"><a href="" class="header-link">HOME</a></li>
+            <li class="header-item">
+              <a href="" class="header-link">SERVICES</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link">PORTFOLIO</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link">ABOUT</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main">
-    <section class="hero">
-      <h2 class="hero-subtitle">Ефективні рішення для вашого бізнесу</h2>
-      <button class="hero-button">Замовити послугу</button>
-    </section>
-    <section class="details">
-      <article class="detail-atention">
-        <h3 class="atention-slogan">УВАГА ДО ДЕТАЛЕЙ</h3>
-        <p class="atention-text">
-          Ідейні міркування, і навіть початок повсякденної роботи з формування
-          позиції.
-        </p>
-      </article>
-      <article class="detail-puntualitit">
-        <h3 class="subtitle-puntualitit">ПУНКТУАЛЬНІСТЬ</h3>
-        <p class="puntualitit-text">
-          Завдання організації, особливо рамки і місце навчання кадрів тягне у
-          себе.
-        </p>
-      </article>
-      <article class="detail-planing">
-        <h3 class="planing-subtitle">ПЛАНУВАННЯ</h3>
-        <p class="planing-text">Так само консультація з широким активом значною мірою зумовлює.</p>
-      </article>
-      <article class="detail-tecnologies">
-        <h3 class="tecnologies-subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-        <p class="tecnologies-text">
-          Значимість цих проблем настільки очевидна, що реалізація планових
-          завдань.
-        </p>
-      </article>
-    </section>
-    <section class="doing">
-      <h2 class="doing-subtitle">Чим ми займаємося</h2>
-      <img class="doing-img" src="images/1/box_1.jpg" alt="box_1"/>
-      <img class="doing-img" src="images/1/box_2.png" alt="box_2"/>
-      <img class="doing-img" src="images/1/box_3.png" alt="box_3"/>
-    </section>
-    <section class="team">
-      <h2 class="team-subtitle">Наша команда</h2>
-      <ul class="team-list">
-        <li class="team-slogan">Ігор Дем'яненко - Product Designer</li>
-        <li class="team-item-img"><img class="team-img" src="images/2/team_card_1.png" alt="card_1"/></li>
-        <li class="team-slogan">Ольга Рєпіна - Frontend Developer</li>
-        <li class="team-item-img"><img class="team-img" src="images/2/team_card_2.png" alt="card_2"/></li>
-        <li class="team-slogan">Микола Тарасов - Marketing</li>
-        <li class="team-item-img"><img class="team-img" src="images/2/team_card_3.png" alt="card_3"/></li>
-        <li class="team-slogan">Михайло Єрмаков - UI Designer</li>
-        <li class="team-item-img"><img class="team-img" src="images/2/team_card_4.png" alt="card_4"/></li>
-      </ul>
-    </section>
-</main>
+      <section class="services">
+        <div class="container">
+          <h2 class="services-title">SERVICES</h2>
+          <ul class="services-list">
+            <li class="services-item">
+              <img src="./images/bin.png" alt="bin-icon" class="services-img" />
+              <h3 class="services-subtitle">E-Commerce</h3>
+              <p class="services-description">
+                Proin iaculis purus consequat sem cure digni ssim. Donec
+                porttitora entum suscipit aenean rhoncus posuere odio in
+                tincidunt.
+              </p>
+            </li>
+            <li class="services-item">
+              <img
+                src="./images/laptop.png"
+                alt="responsive-web"
+                class="services-img"
+              />
+              <h3 class="services-subtitle">Responsive Web</h3>
+              <p class="services-description">
+                Proin iaculis purus consequat sem cure digni ssim. Donec
+                porttitora entum suscipit aenean rhoncus posuere odio in
+                tincidunt.
+              </p>
+            </li>
+            <li class="services-item">
+              <img
+                src="./images/lock.png"
+                alt="web-security"
+                class="services-img"
+              />
+              <h3 class="services-subtitle">Web Security</h3>
+              <p class="services-description">
+                Proin iaculis purus consequat sem cure digni ssim. Donec
+                porttitora entum suscipit aenean rhoncus posuere odio in
+                tincidunt.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <footer class="footer">
-      <h2 class="footer-subtitle"><span style="color: blue;">Web</span>Studio</h2>
-      <p class="footer-email">Email: info@devstudio.com</p>
-      <p class="footer-tel">Tel: +38 096 111 11 11</p>
-      <p class="footer-adress">м. Київ, пр-т Лесі Українки, 26</p>
-      <h3>All rigth reserved.&copy;</h3>
-      <h3>Creaded and designed by Makar Yamniuk</h3>
-    </footer>
+      <section class="contact">
+        <div class="container">
+          <h2 class="contact-title">CONTACT US</h2>
+          <form class="contact-form" name="contact_us_form">
+            <label class="contact-label">
+              <input
+                type="text"
+                placeholder="YOUR NAME*"
+                class="contact-input"
+              />
+            </label>
+            <label class="contact-label">
+              <input
+                type="email"
+                placeholder="YOUR E-MAIL*"
+                class="contact-input"
+              />
+            </label>
+            <label class="contact-label">
+              <input type="text" placeholder="SUBJECT" class="contact-input" />
+            </label>
+            <textarea
+              class="contact-textarea"
+              placeholder="YOUR MESSAGE*"
+            ></textarea>
+            <button type="submit" class="contact-button">SEND MESSAGE</button>
+          </form>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
