@@ -15,7 +15,7 @@
 body {
      color: #757575;
      background-color: #FFFFFF;
-     font-family: var(--second-font)
+     font-family: var(--title-color)
 }
 .container {
   width: 1170px;
