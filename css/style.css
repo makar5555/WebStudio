@@ -93,11 +93,12 @@ body {
 .doing-list{
   display: flex;
   gap: 30px;
-  text-align: center;
 }
 .doing-title {
   padding-bottom: 50px;
   color: var(--color);
+  text-align: center;
+  font-size: 36px;
 }
 .doing-item {
   padding-bottom: 94px;
@@ -119,6 +120,8 @@ body {
   padding-top: 94px;
   padding-bottom: 50px;
   color: var(--color);
+  text-align: center;
+  font-size: 36px;
 }
 .team-subtitle{
   color: var(--color);
