@@ -1,0 +1,79 @@
+/*general-content*/
+/*have-all-file*/
+:root {
+    --accent-color: rgba(33, 150, 243, 1);
+    --logo-color: rgba(0, 0, 0, 1);
+    --title-color: rgba(255, 255, 255, 1);
+    --role-color: rgba(117, 117, 117, 1);
+    --color: rgba(33, 33, 33, 1);
+    --background-color1: rgba(245, 244, 250, 1);
+    --background-color: rgba(47, 48, 58, 1);
+}
+:root{
+    --logo-font: "Raleway" , "sans-serif";
+    --main-font: "Roboto" , "sans-serif";
+}
+*{
+  list-style: none;
+}
+body {
+  color: var(--role-color);
+  background-color: var(--title-color);
+  font-family: var(--main-font);
+  font-size: 16px;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+/*header*/
+.header-logo{
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: var(--logo-color);
+    font-size: 26px;
+    font-family: var(--logo-font);
+    text-decoration: none;
+    line-height: 30.52px;
+}
+.header-span, .footer-span{
+    color: var(--accent-color);
+}
+/*hero*/
+.hero{
+    padding-top: 94px;
+    padding-bottom: 92px;
+}
+.hero-but{
+    width: auto;
+    height: 38px;
+    padding: 6px 22px;
+    background-color: var(--background-color1);
+    border: none;
+    border-radius: 3px;
+    color: var(--color);
+}
+.hero-but:hover{
+    color: var(--title-color);
+    background-color: var(--accent-color);
+}
+.hero-list{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+/*card*/
+.card-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card-item{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.card-title, .card-desc{
+    text-decoration: none;
+}
