@@ -11,6 +11,7 @@
   --about-us: rgba(255, 255, 255, 1);
   --item-border: rgba(238, 238, 238, 1);
   --article-before: rgba(245, 244, 250, 1);
+  --team-shadow: rgba(0, 0, 0, 0.2);
 }
 :root{
   --main-font: "Roboto", sans-serif;
@@ -146,20 +147,29 @@ a {
 }
 
 .details {
-  padding-bottom: 94px;
   padding-top: 94px;
 }
-.details-title:first-child::before{
+.details-item::before{
   content: "";
   display: block;
-  padding-bottom: 30px;
   background-color: var(--article-before);
-  background-image: url(/WebStudio/images/mainpage/vector.png);
   background-size: 70px;
   background-position: center;
-
+  background-repeat: no-repeat;
   width: 270px;
   height: 120px;
+}
+.details-item:nth-child(1)::before{
+  background-image: url(/images/mainpage/vector.png);
+}
+.details-item:nth-child(2)::before{
+  background-image: url(/images/mainpage/clock.png);
+}
+.details-item:nth-child(3)::before{
+  background-image: url(/images/mainpage/diagram.png);
+}
+.details-item:nth-child(4)::before{
+  background-image: url(/images/mainpage/astronaut.png);
 }
 .details-img{
   padding-bottom: 56px;
@@ -174,10 +184,11 @@ a {
   gap: 30px;
   justify-content: space-between;
 }
-
+.details-article{
+  padding-top: 30px;
+}
 .details-item {
   width: 270px;
-  height: 98px;
 }
 
 .details-title {
@@ -211,13 +222,13 @@ a {
   display: flex;
   gap: 30px;
   justify-content: space-between;
-  padding-bottom: 94px;
   margin: 0 auto;
 }
 
 .doing-title {
   margin: 0 auto;
   padding-bottom: 50px;
+  font-size: 36px;
 }
 
 .doing-img {
@@ -233,7 +244,7 @@ a {
 
 .team {
   background-color: var(--team-background);
-  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-container {
@@ -259,7 +270,6 @@ a {
   gap: 30px;
   justify-content: space-between;
   width: 1170px;
-  padding-bottom: 94px;
   padding-left: 0;
   padding-right: 0;
   margin: 0 auto;
@@ -273,6 +283,10 @@ a {
   width: 270px;
   height: 368px;
   text-align: center;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px var(--team-shadow);
+  border-left: 1px;
+  border-right: 1px;
 }
 
 .team-img {
@@ -353,7 +367,7 @@ a {
   color: var(--about-us);
   line-height: 24px;
   letter-spacing: 3%;
-  padding-top: 20px;
+  padding-top: 9px;
 }
 
 .footer-link {
